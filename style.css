@@ -446,8 +446,6 @@ li {
     background-color: #dee2e6;
 }
 
-
-
 .accordion {
     width: 90%;
     max-width: 570px;
@@ -458,6 +456,101 @@ li {
     font-family: 'Oswald', sans-serif;
     margin: 100px auto;
 }
+
+#row-box {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding: 40px;
+
+}
+
+#services-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+#row-box p {
+    font-size: 1.1rem;
+}
+
+#row-box h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#services .col-6:hover {
+    background-color: #dc6414;
+    color: white;
+}
+
+.col-6 {
+    border: 1px solid #000;
+    border-radius: 10px;
+    height: 295px;
+    width: 100%;
+}
+
+#services-btn {
+    background-color: #dc6414;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 250px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.commitment-section {
+    padding: 60px 0;
+}
+
+.commitment-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.commitment-text {
+    font-size: 1.35rem;
+    color: black;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.btn-sustainability {
+    background-color: #3b82f6;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-sustainability:hover {
+    background-color: #2563eb;
+}
+
+.btn-sustainability i {
+    margin-left: 8px;
+    transition: margin-left 0.3s;
+}
+
+.btn-sustainability:hover i {
+    margin-left: 12px;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
 
 /* Tablet and Desktop Styles */
 @media (min-width: 768px) {
@@ -484,9 +577,7 @@ li {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .grid-container2 {
-        grid-template-columns: repeat(3, 1fr);
-    }
+
 
     .abt {
         font-size: 36px;
@@ -556,11 +647,7 @@ li {
         flex-wrap: nowrap;
     }
 
-    .ocean,
-    .logistics,
-    .air {
-        width: 32%;
-    }
+   
 
     .container {
         margin-left: 150px;
